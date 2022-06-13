@@ -1,0 +1,19 @@
+table{
+    width: 100%;
+    border: 1px solid #ae00ff;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #ae00ff;
+    text-align: center;
+    padding: 5px;
+  }
+
+th{
+    background-color: #cfc6cd;
+}
+
+.resaltar{
+    background-color: #e1a9e9;
+}

@@ -1,0 +1,21 @@
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Email</th>
+        <th>Monto</th>
+        <th>Alcanza?</th>
+      </tr>
+      <tr *ngFor="let vendedor of ListaVendedores" [ngClass]="{'resaltar':vendedor.monto>=5000}">
+        <td>{{vendedor.nombre}}</td>
+        <td>{{vendedor.apellido}}</td>
+        <td>{{vendedor.mail}}</td>
+        <td>{{vendedor.monto}}</td>
+        <td> 
+            <div *ngIf="vendedor.monto>=1000; else noAlcanza">Si</div>
+            <ng-template #noAlcanza>No</ng-template> 
+        </td>
+      </tr>     
+</table>
+
+
